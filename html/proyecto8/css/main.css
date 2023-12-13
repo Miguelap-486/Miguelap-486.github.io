@@ -1,0 +1,168 @@
+body{
+  font-family: 'Oswald', sans-serif;
+  background-image: url(../img/ornament.png);
+}
+
+p, li>a{
+  font-family: 'Quattrocento', serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  font-size: 18px;
+}
+#container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 25px 160px;
+}
+
+/*header*/
+.header{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 88px;
+}
+.header__navBar ul{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  color: rgba(48, 48, 48, 1);
+  margin-right: 376px;
+}
+
+.header__navBar a{
+  color: rgba(48, 48, 48, 1); 
+}
+
+.header__navBar li:first-child a:before{
+  content: " ";
+  position: absolute;
+  border: solid 2px rgba(202, 198, 187, 1); 
+  width: 32px;
+  left: 39px;
+  top: 30px;
+}
+
+.header h1 {
+  color: rgba(144, 144, 144, 1);
+  margin-right: 557px;
+}
+
+.header h1 span{
+  color: rgba(48, 48, 48, 1);
+}
+
+
+.header__socials{
+  display: flex;
+  gap: 32px;
+}
+
+/*main*/
+.main__title{
+  position: relative;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 500px;
+  color: rgba(48, 48, 48, 1);
+  margin-bottom: 104px;
+}
+
+.main__title::before{
+  content: " ";
+  position: absolute;
+  border: solid 2px rgba(202, 198, 187, 1); 
+  width: 80px;
+  bottom: -19px;
+}
+
+.main__article{
+  display: flex;
+}
+
+.services{
+  margin-right: 218px;
+  max-width: 300px;
+}
+
+.services h2{
+  font-size: 32px;
+  color: rgba(48, 48, 48, 1);
+  margin-bottom: 32px;
+}
+
+.article{
+  width: 296px;
+  margin-bottom: 43px;
+}
+.article h3{
+  position: relative;
+  font-size: 18px;
+  margin-left: 76px;
+  color: rgba(48, 48, 48, 1);
+  margin-bottom: 32.5px;
+}
+.article p{
+  color:rgba(144, 144, 144, 1);
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.article h3:first-of-type::before{
+  position: absolute;
+  left: -130px;
+  bottom: 5px;
+  width: 60px;
+  height: 60px;
+  content: url(../img/icon.png);
+}
+
+.main__article img{
+  margin-top: -84px;
+  width: 576px;
+  height: 646px;
+  margin-right: 104px;
+}
+
+.about h2{
+  font-size: 32px;
+  color: rgba(48, 48, 48, 1);
+  margin-bottom: 32px;
+}
+
+.about p{
+  color:rgba(144, 144, 144, 1);
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 48px;  
+}
+
+.button{
+  padding:10px 36px ;
+  background-color: rgba(48, 48, 48, 1);
+  font-family: 'Quattrocento', serif;
+  color: rgba(246, 246, 246, 1);
+
+}
+
+.experience{
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+
+.article2 h2{
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgba(48, 48, 48, 1);
+}
+
+.article2 p{
+  margin-top: -20px;
+  font-size: 18px;
+  color: rgba(144, 144, 144, 1);
+}

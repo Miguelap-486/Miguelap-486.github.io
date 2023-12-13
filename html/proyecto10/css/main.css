@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'walsheim'; 
+  src: url('../fonts/GT-Walsheim-Pro/GT-Walsheim-Regular.otf') format('truetype'); 
+}
+@font-face {
+  font-family: 'value'; 
+  src: url('../fonts/Value-Serif-Pro-Regular/Value-Serif-Pro-Regular.ttf') format('truetype'); 
+}
+body {
+  font-family: 'walsheim';
+  margin: 0;
+  padding: 0 auto;
+  background-color:rgb(250,247,215);
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: rgba(26, 26, 26, 1);
+}
+
+#container{
+  max-width: 1440px;
+
+}
+
+.button{
+  padding: 12px 28px;
+  color: white;
+  border-radius: 8px;
+  background-color: black;
+}
+/*header*/
+
+.header h2{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size:16px;
+  padding: 16px 466px ;
+  background-color: rgba(236, 244, 148, 1);
+}
+
+.header__Navbar{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  background-color: white;
+  padding: 24px 60px;
+}
+.header__Navbar h1{
+  margin-right: 176px;
+}
+.header__menu{
+  margin-right:146px ;
+}
+.header__menu ul{
+  font-size: 15px;
+  display: flex;
+  gap: 48px;
+}
+
+.header__buttons{
+  display: flex;
+  align-items: center;
+  gap:16px ;
+}
+
+/*main*/
+.main{
+  position: relative;
+  margin-left: 60px;
+}
+.main h1{
+  font-family: 'value';
+  font-size: 64px;
+  max-width: 626px;
+  margin-bottom: 48px;
+}
+
+.main .button{
+  color: rgba(234, 245, 134, 1);
+}
+
+.services{
+  margin-top: 333px;
+  display: flex;
+  gap: 72px;
+}
+
+
+.services article{
+  display: flex;
+  gap: 18px;
+}
+.value h3{
+  font-family: 'value';
+}
+.services article img{
+  width: 44px;
+  height: 42px;
+}
+
+.main .image:nth-of-type(1){
+  position: absolute;
+  z-index: -1;
+  top:-45px;
+  right: 396px;
+  height: 587px;
+  width: 491px;
+}
+
+.main .image:nth-of-type(2){
+  position: absolute;
+  z-index: -1;
+  top:-45px;
+  right: 0;
+  height: 586px;
+  width: 384px;
+}
