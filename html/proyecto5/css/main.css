@@ -1,0 +1,209 @@
+  /*General Things*/
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: auto;
+  }
+  a{
+    text-decoration: none;
+    color: rgba(64, 60, 57, 1);
+  }
+  form{
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  #container{
+    max-width: 1920px;
+    padding: 15px 160px 57px 160px;
+    background-image: url(../img/heroo.png);
+    background-position: top 60px  right 275px;
+    background-repeat: no-repeat;
+  }
+
+  .button{
+    font-weight: 400;
+    color: rgba(243, 129, 96, 1);
+    text-decoration: underline;
+  }
+
+  .button-Red{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(243, 129, 96, 1);
+    border-radius: 16px;
+    padding: 16.5px 40.5px;
+    font-weight: 400;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgba(64, 60, 57, 1);
+  }
+
+  /*Header*/
+  .header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .header__title{
+    font-weight: 600;
+    font-size: 36px;
+    color: rgba(240, 183, 13, 1);
+    margin-right: 283px;
+  }
+  .header__title span{
+    color: rgba(243, 129, 96, 1);
+  }
+  /*navbar*/
+  .header__navBar{
+    margin-right: 140px;
+  }
+  .header__navBar ul{
+    display: flex;
+    align-items: baseline;
+    gap:56px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .header__navBar ul li:first-of-type a{
+    color: rgba(243, 129, 96, 1); 
+    position: relative;
+  }
+
+  .header__navBar ul li:first-of-type a::after{
+    position: absolute;
+    content: " ";
+    border: 2px solid rgba(243, 129, 96, 1);
+    width: 40px;
+    left: 4px;
+    top:26px;
+  } 
+
+  /*buttons*/
+
+  .header__buttons{
+    display: flex;
+    align-items: center;
+  }
+  .header__buttons span{
+    position: relative;  
+  }
+  .header__buttons img{
+    width: 21.33px;
+    height: 26.67px;
+    margin-right: 56px;
+  }
+  .header__buttons span:before{
+    position: absolute;
+    content: " ";
+    background-color: rgba(243, 129, 96, 1);
+    border: 1px solid rgba(243, 129, 96, 1);
+    border-radius: 100%;
+    left: 22px;
+    bottom: 27px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .button:first-of-type{
+    margin-right: 40px;
+  }
+
+  /*main*/
+  .main__title h1{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 762px;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-bottom: 16px;
+  }
+
+  .main__title h1 span{
+    color: rgba(243, 129, 96, 1);
+  }
+
+  .main__title p{
+    font-size: 24px;
+    max-width: 648px;
+    font-weight: 400;
+    color: rgba(148, 148, 148, 1);
+    margin-bottom: 48px;
+  }
+
+  .main__title form input{
+    padding: 17px 371px 16px 32px;
+    border: 0;
+    background-color: rgba(208, 208, 210, 0.25);
+    margin-bottom: 40px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .main__title form input::placeholder{
+    font-size: 18px;
+    color: rgba(148, 148, 148, 1);
+  }
+
+  .main__title form button{
+      margin-left: -10px;
+      padding: 15px;
+      background-color: rgba(243, 129, 96, 1);
+      border-radius: 0 8px 8px 0;
+      border: 0;
+  }
+
+  .main__title form button img{
+    width: 14.5px;
+    height: 14.5px;
+  }
+
+  /*list*/
+  .main__list{
+    max-width: 400px;
+    margin-bottom: 66px;
+  }
+  .main__list ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .main__list ul li::before{
+    top: 6px;
+    position: relative;
+    margin-right: 10px;
+    content: url(../img/Check.svg);
+    width: 24px;
+    height: 24px;
+  }
+
+  /*products*/
+  .main__products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    gap: 24px;
+  }
+  .main_products img{
+    width: 76px;
+    height: 76px;
+    margin-bottom: 24px;
+  }
+  .main_product h3{
+    font-size: 24px;
+    color: rgba(64, 60, 57, 1);
+    margin-bottom: 8px;
+  }
+
+  .main_product p{
+    font-size: 16px;
+    margin: 0;
+  }

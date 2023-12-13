@@ -1,0 +1,215 @@
+/*General Things*/
+body{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding: 0;
+  background-image:  url(../img/Artzie..png);
+  background-size: 41.5%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+#container{
+  max-width: 1920px;
+  padding: 33px 130px 57px 130px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+ul{
+  list-style: none;
+}
+.button{
+  padding: 10.5px 39px;
+  font-weight: 600;
+}
+
+.button--Red{
+  background-color:rgba(250, 80, 77, 1);
+}
+
+.button--NoBg{
+  color: rgba(46, 47, 56, 1);
+}
+/*Header*/
+.header{
+  display: flex;
+  align-items: baseline;
+}
+
+.header__title{
+  font-weight: bold;
+  margin-right: 135px;
+}
+.header__title span{
+  color: rgba(250, 80, 77, 1);
+}
+.header__navbar ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+  color:rgba(46, 47, 56, 1) ;
+  
+}
+
+.header__buttons{
+  margin-left: 690px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons .button{
+  color: white;
+}
+
+/*main*/
+.main{
+  display: flex;
+  gap: 150px;
+}
+/*main title,description and button*/
+.title{
+  position: relative;
+  font-family: 'Belgrano', serif;
+  max-width: 925px;
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.title::after{
+  content: url(../img/round.svg);
+  position: absolute;
+  left: 140px;
+  top: 0;
+
+}
+
+.main__title{
+  margin-bottom: 74px;
+}
+.main__title p{
+  position: relative;
+  font-size: 24px;
+  color: rgba(142, 142, 142, 1);
+  margin-bottom: 40px;
+}
+.main__title p::before{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  border: 2px solid rgba(250, 80, 77, 1);
+
+}
+
+.main__title .button--Red{
+  color: white;
+  padding: 16.5px 86.5px;
+  font-weight: 600;
+}
+
+.main__title .button--NoBg{
+  font-weight: 400px;
+  text-decoration: underline;
+  position: relative;
+}
+.main__title .button--NoBg::after{
+  position: absolute;
+  top:3px;
+  content: url(../img/arrow.svg);
+  margin-left: 10px;
+
+}
+
+/*Gallery*/
+.main__gallery{
+  position: relative;
+  font-family: 'Belgrano', serif;
+  font-weight: 400;
+
+}
+
+.main__gallery h2{
+  margin-bottom: 24px;
+}
+
+.images{
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  left: 0;
+}
+
+.images div{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+}
+
+/*aside*/
+.main__aside-profile{
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+  margin-top: -97px;
+  z-index: 1;
+}
+.profile-info{
+  display: flex;
+  align-items: center;
+  gap:216px;
+}
+.main-info{
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.main-info div p{
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.main-info div h1{
+  font-size: 24px;
+
+}
+.main-info img{
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+}
+.currency{
+  text-align: center;
+}
+hr{
+  margin-bottom: 32px;
+}
+
+.buttons_profile{
+  margin-bottom: 16px;
+}
+
+.buttons_profile .button{
+  padding: 10.5px 95.5px;
+  color:white;
+}
+.buttons_profile .button--NoBg{
+  color: rgba(250, 80, 77, 1);
+}
+
+.main__aside-list{
+  display: flex;
+  align-content: center;
+  gap: 72px;
+  color: white;
+}
+
+.main__aside-list span{
+  font-size:32px;
+  font-weight: bolder;
+  color: rgba(250, 80, 77, 1);
+  margin-right: 8px;
+}
