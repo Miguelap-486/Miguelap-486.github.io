@@ -1,0 +1,155 @@
+body{
+  background-color: rgba(43, 45, 56, 1);
+  font-family: 'Poppins', sans-serif;
+}
+
+#container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding:20px 160px;
+}
+
+h1{
+  color:white;
+}
+
+span{
+  color: rgba(219, 42, 107, 1);
+}
+
+a{
+  text-decoration: none;
+  color: rgba(171, 171, 171, 1);
+}
+
+ul{
+  list-style: none;
+}
+
+.button{
+  background-color: rgba(219, 42, 107, 1);
+  padding: 16px 69px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 16px 16px 16px 0;
+}
+
+/*header*/
+.header{
+  display: flex;
+  align-items: baseline;
+  gap: 742px;
+  margin-bottom: 100px;
+}
+.header__title{
+  font-size: 36px;
+}
+
+.header__navBar ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.header__navBar ul li:first-child a{
+  color: white;
+}
+
+.header__navBar ul li:first-child a::before{
+  content: " ";
+  position: absolute;
+  bottom: -8px;
+  width: 32px;
+  border-radius: 6px;
+  border: solid 2px rgba(219, 42, 107, 1);
+}
+
+/*main*/
+.main{
+  display: flex;
+  gap: 27px;
+
+}
+.main__title{
+  margin-bottom: 144px;
+}
+.main__title h1{
+  font-family: 'Merriweather';
+  font-weight: 700;
+  line-height: 100.56px;
+  max-width:784px ;
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.main__title p{
+  max-width: 648px;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(171, 171, 171, 1);
+  line-height: 40px;
+  margin-bottom: 32px;
+}
+
+.main__title a:first-of-type{
+  margin-right: 32px;
+}
+
+.main__title a:last-of-type{
+  position:relative;
+  color: white;
+  text-decoration: underline;
+}
+.main__title a:last-of-type::before{
+  position: absolute;
+  content: url(../img/Arrow.svg);
+  bottom: -15px;
+  right: -50px;
+} 
+
+.articles{
+  max-width: 190px;
+  display: flex;
+  gap: 48px;
+}
+.article{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+}
+.article img{
+  width: 64px;
+  height: 64px;
+
+}
+
+.main__aside{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px ;
+}
+
+.main__aside img:nth-child(1){
+  border-radius: 90px;
+  background-color: rgba(110, 31, 237, 1);
+}
+.main__aside img:nth-child(3){
+  border-radius: 90px;
+  margin-top: 130px;
+  margin-bottom: -600px;
+  background-color: rgba(244, 184, 64, 1);
+}
+.main__aside img:nth-child(5){
+  border-radius: 90px;
+  margin-top: -265px;
+  background-color: rgba(255, 126, 41, 1);
+}
+
+.main__aside img:nth-child(4){
+  border-radius: 90px;
+  background-color: rgba(219, 42, 107, 1);
+}
