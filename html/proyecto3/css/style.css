@@ -1,0 +1,164 @@
+/*
+    paleta colores:
+        marron:rgba(155, 154, 120, 1)
+        negro:rgba(49, 49, 49, 1)
+        gris claro:rgba(144, 144, 144, 1)
+*/
+
+#container{
+    padding: auto;
+    margin: auto;
+    font-family: poppins;
+    max-width: 1440px;
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header h1 {
+    color:rgba(49, 49, 49, 1);
+}
+.header h1 span{
+    color:rgba(155, 154, 120, 1);
+}
+
+.header__menu ul{
+    list-style: none;
+    display: flex;
+    gap: 56px;
+}
+.header__menu ul li a{
+    color:rgba(49, 49, 49, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+.header__menu ul li span a{
+    color:rgba(155, 154, 120, 1);
+}
+
+.header__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.header__buttons a img{
+    height: 22px;
+    width: 22px;
+}
+.header__buttons a:nth-of-type(2){
+    color:rgba(155, 154, 120, 1);
+}
+.header__buttons div{
+    background-color: rgba(155, 154, 120, 1);
+    max-width: fit-content;
+    padding:8px;
+}
+
+.header__buttons div a{
+    text-decoration: none;
+    color:white
+}
+
+/*main*/
+
+.main{
+    grid-area: "" "h1"
+               "" "p";
+    background-image: url(../img/Placeholder.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 58%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: '' 'h1'
+                         '' 'p';
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    gap: 0;
+    padding-top: 15px;
+}
+ .main__description{
+    margin-right: 10%;
+    grid-area: "h1";
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255,0.7);
+    max-width: 45%;
+    max-height: 80%;
+    padding: 10px;
+
+    margin-bottom: 1%;
+}
+
+.main__description h1{
+    font-family: Playfair Display;
+    font-size: 3.2em;
+    color:rgba(49, 49, 49, 1);
+}
+.main__description span::after{
+    content: " -";
+    color: rgba(155, 154, 120, 1);
+    font-size: 1.3em;
+}
+
+
+.main__description p{
+    grid-area: "p";
+    color: rgba(144, 144, 144, 1);
+    margin-top: 1px;
+    font-weight: 800;
+    font-size: 1.2em;
+} 
+
+.main__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+}
+.main__list article{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    font-weight: bold;
+    align-items: center;
+    color: rgba(49, 49, 49, 1);
+
+}
+/* articulos */
+.main__articles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2%;
+}
+.main__articles article {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.main__articles article img{
+    height:55px;
+    width: 60px;
+}
+.main__articles article h3{
+    color: rgba(49, 49, 49, 1);
+}
+.main__articles article p{
+    color: rgba(144, 144, 144, 1);
+}
+
+
+
