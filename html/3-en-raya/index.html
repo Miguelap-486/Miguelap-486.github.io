@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Micro+5&family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <title>TicTacToe</title>
+    <script type="module" crossorigin src="./assets/index-CQV2iTGG.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CV1fPCi-.css">
+  </head>
+  <body>
+    <nav>
+      <h1 class="title">Tic<span>Tac</span><span>Toe!</span></h1>
+    </nav>
+    <div class="menu">
+      <div class="preGame">
+        <label for="dimension">De qué tamaño quieres el tablero</label>
+        <br>
+        <input id="dimension" type="text" name="dimension">
+        <br><br>
+        <label for="rounds">Cuántas rondas quieres jugar</label>
+        <br>
+        <input id="rounds" type="text" name="rounds">
+        <br><br>
+        <button id="createTable">Crear tablero</button>
+        <br><br>
+        <label for="machine"><input type="checkbox" name="machine" id="machine"> Jugar contra la máquina</label>
+      </div>
+    </div>
+    
+    <div class="inGame hide">
+      <div id="roundInfo">Ronda <span id="currentRound"></span> de <span id="totalRounds"></span></div>
+      <button id="resetGame">Reiniciar</button>
+      <button class="clearGameButton">Limpiar Tablero</button>
+      <button id="nextRoundButton">Siguiente Ronda</button>
+
+    </div>
+    <div class="cosetes">
+      <div id="marcador"></div>
+      <div id="movimientos"></div>
+    </div>
+    <div id="tablero"></div>
+    <div class="clearGame"><button class="clearGameButton hidden">Volver a jugar</button></div>
+
+  </body>
+</html>
