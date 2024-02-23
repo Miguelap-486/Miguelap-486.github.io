@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Password generator app</title>
+  <link rel="stylesheet" crossorigin href="./assets/index-MNHNiucq.css">
+</head>
+<body>
+<div id="container">
+  <h1>Password Generator</h1>
+  <div class="password_copy">
+    <input type="text" name="Password" id="password" placeholder="Your password will appear here" disabled>
+    <button class="clipboard" onclick="copyClipboard()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(164, 255, 175)" class="bi bi-clipboard" viewBox="0 0 16 16">
+        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+      </svg>
+      </button>
+  </div>
+
+  <div class="main">
+    <section class="slidecontainer">
+      <div class="slider_info">
+        <p>Character length</p>
+        <span id="demo"></span>
+      </div>
+      <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+    </section>
+    <section class="include_buttons">
+      <label for="uppercase-checkbox" class="checkbox-container">
+        Include Uppercase Letters
+        <input type="checkbox" id="uppercase-checkbox" name="Uppercase" class="styled-checkbox checkbox">
+        <span class="checkmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+          </svg>
+        </span>
+      </label>
+      <label for="lowercase-checkbox" class="checkbox-container">
+        Include Lowercase Letters
+        <input type="checkbox" id="lowercase-checkbox" name="Lowercase" class="styled-checkbox checkbox">
+        <span class="checkmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+          </svg>
+        </span>
+      </label>
+      <label for="numbers-checkbox" class="checkbox-container">
+        Include Numbers
+        <input type="checkbox" id="numbers-checkbox" name="Numbers" class="styled-checkbox checkbox">
+        <span class="checkmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+          </svg>
+        </span>
+      </label>
+      <label for="symbols-checkbox" class="checkbox-container">
+        Include Symbols
+        <input type="checkbox" id="symbols-checkbox" name="Symbols" class="styled-checkbox checkbox">
+        <span class="checkmark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+          </svg>
+        </span>
+      </label>
+    </section>
+    
+    
+    <section class="strength_indicator">
+      <h3>Strength</h3>
+      <div class="Strength_info">
+        <p class="strength_indicator_text"></p>
+        <div id="1" class="color_empty"></div>
+        <div id="2" class="color_empty"></div>
+        <div id="3" class="color_empty"></div>
+        <div id="4" class="color_empty"></div>
+      </div>
+
+    </section>
+
+    <div class="generate_button_click">
+      <button>GENERATE</button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+      </svg>
+    </div>
+    
+  </div>
+</div>
+<script src="./main.js"></script>
+
+</body>
+
+</html>
